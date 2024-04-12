@@ -1,0 +1,841 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Title -->
+<title>FootFlare - Shoes Store Mobile App Template ( Bootstrap + PWA ) | DexignZone</title>
+
+<!-- Meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="DexignZone">
+<meta name="robots" content="index, follow">
+
+<meta name="keywords" content="FootFlare, shoes, footwear, mobile app template, e-commerce, online shopping, fashion, UX/UI, mobile development, web development, Bootstrap 5, mobile app template, mobile commerce, Bootstrap Template, Admin Panel, Dashboard UI Kit, HTML5, CSS3, Responsive Web App, Bootstrap 4, User Interface Design, android, mobile, mobile template, mobile app, ui kit, dark layout, app, mobile web, pwa, web app, Bootstrap, mobile UI, app template, responsive design, trendy app, modern UI, technology, User-Friendly Interface, PWA (Progressive Web App), Mobile Ordering, Innovative Technology, App Development, Mobile App Development, Product Showcase, Customizable, Modern Design, UI/UX Design, Mobile App Design, Web Application, Digital Presence">   
+
+<meta name="description" content="Elevate your shoe shopping experience with FootFlare – a sleek and responsive mobile app template powered by Bootstrap and PWA technology. Explore a curated selection of footwear, shop with ease, and stay ahead of the fashion curve, all within a seamless mobile interface. Created by DexignZone, FootFlare brings convenience and style to your fingertips, revolutionizing the way you browse and purchase shoes online.">
+
+<meta property="og:title" content="FootFlare - Shoes Store Mobile App Template ( Bootstrap + PWA ) | DexignZone">
+<meta property="og:description" content="Elevate your shoe shopping experience with FootFlare – a sleek and responsive mobile app template powered by Bootstrap and PWA technology. Explore a curated selection of footwear, shop with ease, and stay ahead of the fashion curve, all within a seamless mobile interface. Created by DexignZone, FootFlare brings convenience and style to your fingertips, revolutionizing the way you browse and purchase shoes online.">
+
+<meta property="og:image" content="https://footflare.dexignzone.com/mobile/social-image.png">
+<meta name="format-detection" content="telephone=no">
+
+<meta name="twitter:title" content="FootFlare - Shoes Store Mobile App Template ( Bootstrap + PWA ) | DexignZone">
+<meta name="twitter:description" content="Elevate your shoe shopping experience with FootFlare – a sleek and responsive mobile app template powered by Bootstrap and PWA technology. Explore a curated selection of footwear, shop with ease, and stay ahead of the fashion curve, all within a seamless mobile interface. Created by DexignZone, FootFlare brings convenience and style to your fingertips, revolutionizing the way you browse and purchase shoes online.">
+
+<meta name="twitter:image" content="https://footflare.dexignzone.com/mobile/social-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Mobile Specific -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
+
+<!-- Favicons Icon -->
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/app-logo/favicon.png">
+
+<!-- Global CSS -->
+<link rel="stylesheet" href="assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="assets/vendor/nouislider/nouislider.min.css">
+<link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="../../css2?family=Jost:ital,wght@0,100..900;1,100..900&family=McLaren&display=swap" rel="stylesheet">
+
+</head>   
+<body>
+<div class="page-wrapper">
+
+<!-- Preloader -->
+<div id="preloader">
+<div class="loader">
+<div class="spinner-border text-primary" role="status">
+<span class="visually-hidden">Loading...</span>
+</div>
+</div>
+</div>
+<!-- Preloader end-->
+
+<!-- Header -->
+<header class="header header-fixed">
+<div class="header-content">
+<div class="left-content">
+<a href="javascript:void(0);" class="back-btn dz-icon icon-fill">
+<i class="feather icon-chevron-left"></i>
+</a>
+</div>
+<div class="mid-content px-2">
+<div class="input-group input-group-icon input-sm">
+<span class="input-group-text style-1">
+<div class="input-icon">
+<i class="feather icon-search opacity-100"></i>
+</div>
+</span>
+<input type="search" class="form-control style-1 font-16" placeholder="Search Products">								
+</div>
+</div>
+<div class="right-content d-flex align-items-center gap-3 lh-1 ps-2">
+<ul class="dz-tab nav nav-pills light style-1 list" role="tablist">
+<li class="nav-item" role="presentation">
+<button class="nav-link active" id="list" data-bs-toggle="pill" data-bs-target="#pills-list" type="button" role="tab" aria-controls="pills-list" aria-selected="true">
+<svg width="18" height="18" viewbox="0 0 18 18" fill="none">
+<path d="M2.99999 0H5.24999C6.90683 0 8.24998 1.34314 8.24998 2.99999V5.24999C8.24998 6.90683 6.90683 8.24998 5.24999 8.24998H2.99999C1.34314 8.25001 0 6.90687 0 5.24999V2.99999C0 1.34314 1.34314 0 2.99999 0Z" fill="black"></path>
+<path d="M12.75 0H15C16.6568 0 18 1.34314 18 2.99999V5.24999C18 6.90683 16.6568 8.24998 15 8.24998H12.75C11.0931 8.24998 9.75 6.90683 9.75 5.24999V2.99999C9.74996 1.34314 11.0931 0 12.75 0Z" fill="black"></path>
+<path d="M2.99999 9.75H5.24999C6.90683 9.75 8.24998 11.0931 8.24998 12.75V15C8.24998 16.6568 6.90683 18 5.24999 18H2.99999C1.34314 18 0 16.6569 0 15V12.75C0 11.0931 1.34314 9.75 2.99999 9.75Z" fill="black"></path>
+<path d="M12.75 9.75H15C16.6568 9.75 18 11.0931 18 12.75V15C18 16.6569 16.6568 18 15 18H12.75C11.0931 18 9.75 16.6569 9.75 15V12.75C9.74996 11.0931 11.0931 9.75 12.75 9.75Z" fill="black"></path>
+</svg>								
+</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" id="grid" data-bs-toggle="pill" data-bs-target="#pills-grid" type="button" role="tab" aria-controls="pills-grid" aria-selected="false" tabindex="-1">
+<svg width="27" height="18" viewbox="0 0 27 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.80004C0 0.805904 0.805904 0 1.80004 0H25.2C26.1941 0 27 0.805904 27 1.80004C27 2.79417 26.1941 3.60008 25.2 3.60008H1.80004C0.805904 3.60008 0 2.79417 0 1.80004ZM0 16.1999C0 15.2058 0.805904 14.3999 1.80004 14.3999H25.2C26.1941 14.3999 27 15.2058 27 16.1999C27 17.1941 26.1941 18 25.2 18H1.80004C0.805904 18 0 17.1941 0 16.1999ZM1.80004 7.20044C0.805904 7.20044 0 8.00634 0 9.00048C0 9.99461 0.805904 10.8005 1.80004 10.8005H25.2C26.1941 10.8005 27 9.99461 27 9.00048C27 8.00634 26.1941 7.20044 25.2 7.20044H1.80004Z" fill="black"></path>
+</svg>
+</button>
+</li>
+</ul>
+<a href="cart.html" class="notification-badge font-20">
+<svg width="21" height="21" viewbox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M3.91058 18.5886C3.91058 17.7486 4.59058 17.0686 5.43058 17.0686C6.26058 17.0686 6.94058 17.7486 6.94058 18.5886C6.94058 19.4186 6.26058 20.0986 5.43058 20.0986C4.59058 20.0986 3.91058 19.4186 3.91058 18.5886ZM15.1606 18.5886C15.1606 17.7486 15.8406 17.0686 16.6806 17.0686C17.5106 17.0686 18.1906 17.7486 18.1906 18.5886C18.1906 19.4186 17.5106 20.0986 16.6806 20.0986C15.8406 20.0986 15.1606 19.4186 15.1606 18.5886Z" fill="black"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.1908 4.34909C18.8008 4.34909 19.2008 4.55909 19.6008 5.01909C20.0008 5.47909 20.0708 6.13909 19.9808 6.73809L19.0308 13.2981C18.8508 14.5591 17.7708 15.4881 16.5008 15.4881H5.5908C4.2608 15.4881 3.1608 14.4681 3.0508 13.1491L2.1308 2.24809L0.620803 1.98809C0.220803 1.91809 -0.0591968 1.52809 0.0108032 1.12809C0.0808032 0.718086 0.470803 0.448086 0.880803 0.508086L3.2658 0.868086C3.6058 0.929086 3.8558 1.20809 3.8858 1.54809L4.0758 3.78809C4.1058 4.10909 4.3658 4.34909 4.6858 4.34909H18.1908ZM12.1308 9.54809H14.9008C15.3208 9.54809 15.6508 9.20809 15.6508 8.79809C15.6508 8.37809 15.3208 8.04809 14.9008 8.04809H12.1308C11.7108 8.04809 11.3808 8.37809 11.3808 8.79809C11.3808 9.20809 11.7108 9.54809 12.1308 9.54809Z" fill="black"></path>
+</svg>
+<span class="badge badge-danger">14</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Header -->
+
+<!-- Main Content Start -->
+<main class="page-content space-top p-b70">
+<div class="tab-content" id="pills-tabContent">
+<div class="tab-pane fade show active" id="pills-list" role="tabpanel" aria-labelledby="pills-list-tab" tabindex="0">
+<div class="container">
+<div class="swiper category-slide">
+<div class="swiper-wrapper">
+<div class="swiper-slide">	
+<a href="javascript:void(0);" class="category-btn">Crazy Deals</a>
+</div>
+<div class="swiper-slide">
+<a href="javascript:void(0);" class="category-btn">Budget Buys</a>
+</div>
+<div class="swiper-slide">	
+<a href="javascript:void(0);" class="category-btn">Best Offer</a>
+</div>
+<div class="swiper-slide">	
+<a href="javascript:void(0);" class="category-btn">Crazy Deals</a>
+</div>
+<div class="swiper-slide">
+<a href="javascript:void(0);" class="category-btn">Budget Buys</a>
+</div>
+<div class="swiper-slide">	
+<a href="javascript:void(0);" class="category-btn">Best Offer</a>
+</div>
+<div class="swiper-slide">	
+<a href="javascript:void(0);" class="category-btn">Best Offer</a>
+</div>
+<div class="swiper-slide">	
+<a href="javascript:void(0);" class="category-btn">Crazy Deals</a>
+</div>
+<div class="swiper-slide">
+<a href="javascript:void(0);" class="category-btn">Budget Buys</a>
+</div>
+</div>
+</div>
+<div class="row gx-3 gy-4">
+<div class="col-6">
+<div class="dz-card style-1">
+<div class="dz-media">
+<div class="off-badge">30% OFF</div>
+<a href="product-detail.html">
+<img src="assets/images/product/product1/pic1.png" alt="">
+</a>
+<a href="javascript:void(0);" class="item-bookmark">
+<i class="feather icon-heart-on"></i>
+</a>
+</div>
+<div class="dz-content">
+<div class="inner-content">
+<h6 class="title"><a href="product-detail.html">Swift Glide Sprinter Soles</a></h6>
+<div class="dz-meta">
+<div class="dz-price">$199</div>
+</div>
+</div>
+<a href="product-detail.html" class="dz-icon icon-fill icon-xs"><i class="feather icon-arrow-right font-w600"></i></a>
+</div>
+</div>
+</div>
+<div class="col-6">
+<div class="dz-card style-1">
+<div class="dz-media">
+<a href="product-detail.html">
+<img src="assets/images/product/product1/pic2.png" alt="">
+</a>
+<a href="javascript:void(0);" class="item-bookmark">
+<i class="feather icon-heart-on"></i>
+</a>
+</div>
+<div class="dz-content">
+<div class="inner-content">
+<h6 class="title"><a href="product-detail.html">Echo Vibe Urban Runners</a></h6>
+<div class="dz-meta">
+<div class="dz-price">$149</div>
+</div>
+</div>
+<a href="product-detail.html" class="dz-icon icon-fill icon-xs"><i class="feather icon-arrow-right font-w600"></i></a>
+</div>
+</div>
+</div>
+<div class="col-6">
+<div class="dz-card style-1">
+<div class="dz-media">
+<a href="product-detail.html">
+<img src="assets/images/product/product1/pic3.png" alt="">
+</a>
+<a href="javascript:void(0);" class="item-bookmark">
+<i class="feather icon-heart-on"></i>
+</a>
+</div>
+<div class="dz-content">
+<div class="inner-content">
+<h6 class="title"><a href="product-detail.html">Zen Dash Active Flex Shoes</a></h6>
+<div class="dz-meta">
+<div class="dz-price">$299</div>
+</div>
+</div>
+<a href="product-detail.html" class="dz-icon icon-fill icon-xs"><i class="feather icon-arrow-right font-w600"></i></a>
+</div>
+</div>
+</div>
+<div class="col-6">
+<div class="dz-card style-1">
+<div class="dz-media">
+<div class="off-badge bg-danger">30% OFF</div>
+<a href="product-detail.html">
+<img src="assets/images/product/product1/pic4.png" alt="">
+</a>
+<a href="javascript:void(0);" class="item-bookmark">
+<i class="feather icon-heart-on"></i>
+</a>
+</div>
+<div class="dz-content">
+<div class="inner-content">
+<h6 class="title"><a href="product-detail.html">Nova Stride Street Stompers</a></h6>
+<div class="dz-meta">
+<div class="dz-price">$99</div>
+</div>
+</div>
+<a href="product-detail.html" class="dz-icon icon-fill icon-xs"><i class="feather icon-arrow-right font-w600"></i></a>
+</div>
+</div>
+</div>
+<div class="col-6">
+<div class="dz-card style-1">
+<div class="dz-media">
+<div class="off-badge">30% OFF</div>
+<a href="product-detail.html">
+<img src="assets/images/product/product1/pic5.png" alt="">
+</a>
+<a href="javascript:void(0);" class="item-bookmark">
+<i class="feather icon-heart-on"></i>
+</a>
+</div>
+<div class="dz-content">
+<div class="inner-content">
+<h6 class="title"><a href="product-detail.html">Evo Quip Evo Quick Strides</a></h6>
+<div class="dz-meta">
+<div class="dz-price">$199</div>
+</div>
+</div>
+<a href="product-detail.html" class="dz-icon icon-fill icon-xs"><i class="feather icon-arrow-right font-w600"></i></a>
+</div>
+</div>
+</div>
+<div class="col-6">
+<div class="dz-card style-1">
+<div class="dz-media">
+<div class="off-badge bg-danger">20% OFF</div>
+<a href="product-detail.html">
+<img src="assets/images/product/product1/pic6.png" alt="">
+</a>
+<a href="javascript:void(0);" class="item-bookmark">
+<i class="feather icon-heart-on"></i>
+</a>
+</div>
+<div class="dz-content">
+<div class="inner-content">
+<h6 class="title"><a href="product-detail.html">Echo Vibe Urban Runners</a></h6>
+<div class="dz-meta">
+<div class="dz-price">$84</div>
+</div>
+</div>
+<a href="product-detail.html" class="dz-icon icon-fill icon-xs"><i class="feather icon-arrow-right font-w600"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab" tabindex="0">
+<div class="container">
+<div class="swiper category-slide">
+<div class="swiper-wrapper">
+<div class="swiper-slide">	
+<a href="javascript:void(0);" class="category-btn">Crazy Deals</a>
+</div>
+<div class="swiper-slide">
+<a href="javascript:void(0);" class="category-btn">Budget Buys</a>
+</div>
+<div class="swiper-slide">	
+<a href="javascript:void(0);" class="category-btn">Best Offer</a>
+</div>
+<div class="swiper-slide">	
+<a href="javascript:void(0);" class="category-btn">Crazy Deals</a>
+</div>
+<div class="swiper-slide">
+<a href="javascript:void(0);" class="category-btn">Budget Buys</a>
+</div>
+<div class="swiper-slide">	
+<a href="javascript:void(0);" class="category-btn">Best Offer</a>
+</div>
+</div>
+</div>
+
+<!-- LIST TYPE  -->
+<div class="dz-card list-style style-2">
+<div class="dz-media">
+<a href="product-detail.html">
+<img src="assets/images/product/product1/pic1.png" alt="">
+</a>
+<a href="javascript:void(0);" class="item-bookmark icon-left">
+<i class="feather icon-heart-on"></i>
+</a>
+</div>
+<div class="dz-content">
+<h6 class="title"><a href="product-detail.html">Echo Vibe Urban Runners</a></h6>
+<ul class="dz-meta">
+<li class="dz-price">$179</li>
+<li class="dz-status">FREE Delivery</li>
+</ul>
+<div class="dz-off">40% Off</div>
+<a href="product-detail.html" class="dz-icon icon-fill icon-xs"><i class="feather icon-arrow-right font-w600"></i></a>
+</div>
+</div>
+<div class="dz-card list-style style-2">
+<div class="dz-media">
+<a href="product-detail.html">
+<img src="assets/images/product/product1/pic2.png" alt="">
+</a>
+<a href="javascript:void(0);" class="item-bookmark icon-left">
+<i class="feather icon-heart-on"></i>
+</a>
+</div>
+<div class="dz-content">
+<h6 class="title"><a href="product-detail.html">Swift Glide Sprinter Soles</a></h6>
+<ul class="dz-meta">
+<li class="dz-price">$179</li>
+<li class="dz-status">FREE Delivery</li>
+</ul>
+<div class="dz-off">40% Off</div>
+<a href="product-detail.html" class="dz-icon icon-fill icon-xs"><i class="feather icon-arrow-right font-w600"></i></a>
+</div>
+</div>
+<div class="dz-card list-style style-2">
+<div class="dz-media">
+<a href="product-detail.html">
+<img src="assets/images/product/product1/pic3.png" alt="">
+</a>
+<a href="javascript:void(0);" class="item-bookmark icon-left">
+<i class="feather icon-heart-on"></i>
+</a>
+</div>
+<div class="dz-content">
+<h6 class="title"><a href="product-detail.html">Sky Burst Skyline Burst Shoes</a></h6>
+<ul class="dz-meta">
+<li class="dz-price">$179</li>
+<li class="dz-status">FREE Delivery</li>
+</ul>
+<div class="dz-off">40% Off</div>
+<a href="product-detail.html" class="dz-icon icon-fill icon-xs"><i class="feather icon-arrow-right font-w600"></i></a>
+</div>
+</div>
+<div class="dz-card list-style style-2">
+<div class="dz-media">
+<a href="product-detail.html">
+<img src="assets/images/product/product1/pic4.png" alt="">
+</a>
+<a href="javascript:void(0);" class="item-bookmark icon-left">
+<i class="feather icon-heart-on"></i>
+</a>
+</div>
+<div class="dz-content">
+<h6 class="title"><a href="product-detail.html">Zen Dash Active Flex Shoes</a></h6>
+<ul class="dz-meta">
+<li class="dz-price">$179</li>
+<li class="dz-status">FREE Delivery</li>
+</ul>
+<div class="dz-off">40% Off</div>
+<a href="product-detail.html" class="dz-icon icon-fill icon-xs"><i class="feather icon-arrow-right font-w600"></i></a>
+</div>
+</div>
+<div class="dz-card list-style style-2">
+<div class="dz-media">
+<a href="product-detail.html">
+<img src="assets/images/product/product1/pic5.png" alt="">
+</a>
+<a href="javascript:void(0);" class="item-bookmark icon-left">
+<i class="feather icon-heart-on"></i>
+</a>
+</div>
+<div class="dz-content">
+<h6 class="title"><a href="product-detail.html">Echo Vibe Urban Runners</a></h6>
+<ul class="dz-meta">
+<li class="dz-price">$179</li>
+<li class="dz-status">FREE Delivery</li>
+</ul>
+<div class="dz-off">40% Off</div>
+<a href="product-detail.html" class="dz-icon icon-fill icon-xs"><i class="feather icon-arrow-right font-w600"></i></a>
+</div>
+</div>
+<div class="dz-card list-style style-2">
+<div class="dz-media">
+<a href="product-detail.html">
+<img src="assets/images/product/product1/pic6.png" alt="">
+</a>
+<a href="javascript:void(0);" class="item-bookmark icon-left">
+<i class="feather icon-heart-on"></i>
+</a>
+</div>
+<div class="dz-content">
+<h6 class="title"><a href="product-detail.html">Nova Stride Street Stompers</a></h6>
+<ul class="dz-meta">
+<li class="dz-price">$179</li>
+<li class="dz-status">FREE Delivery</li>
+</ul>
+<div class="dz-off">40% Off</div>
+<a href="product-detail.html" class="dz-icon icon-fill icon-xs"><i class="feather icon-arrow-right font-w600"></i></a>
+</div>
+</div>
+<div class="dz-card list-style style-2">
+<div class="dz-media">
+<a href="product-detail.html">
+<img src="assets/images/product/product1/pic1.png" alt="">
+</a>
+<a href="javascript:void(0);" class="item-bookmark icon-left">
+<i class="feather icon-heart-on"></i>
+</a>
+</div>
+<div class="dz-content">
+<h6 class="title"><a href="product-detail.html">Echo Vibe Urban Runners</a></h6>
+<ul class="dz-meta">
+<li class="dz-price">$179</li>
+<li class="dz-status">FREE Delivery</li>
+</ul>
+<div class="dz-off">40% Off</div>
+<a href="product-detail.html" class="dz-icon icon-fill icon-xs"><i class="feather icon-arrow-right font-w600"></i></a>
+</div>
+</div>
+<div class="dz-card list-style style-2">
+<div class="dz-media">
+<a href="product-detail.html">
+<img src="assets/images/product/product1/pic2.png" alt="">
+</a>
+<a href="javascript:void(0);" class="item-bookmark icon-left">
+<i class="feather icon-heart-on"></i>
+</a>
+</div>
+<div class="dz-content">
+<h6 class="title"><a href="product-detail.html">Echo Vibe Urban Runners</a></h6>
+<ul class="dz-meta">
+<li class="dz-price">$179</li>
+<li class="dz-status">FREE Delivery</li>
+</ul>
+<div class="dz-off">40% Off</div>
+<a href="product-detail.html" class="dz-icon icon-fill icon-xs"><i class="feather icon-arrow-right font-w600"></i></a>
+</div>
+</div>
+<div class="dz-card list-style style-2">
+<div class="dz-media">
+<a href="product-detail.html">
+<img src="assets/images/product/product1/pic3.png" alt="">
+</a>
+<a href="javascript:void(0);" class="item-bookmark icon-left">
+<i class="feather icon-heart-on"></i>
+</a>
+</div>
+<div class="dz-content">
+<h6 class="title"><a href="product-detail.html">Echo Vibe Urban Runners</a></h6>
+<ul class="dz-meta">
+<li class="dz-price">$179</li>
+<li class="dz-status">FREE Delivery</li>
+</ul>
+<div class="dz-off">40% Off</div>
+<a href="product-detail.html" class="dz-icon icon-fill icon-xs"><i class="feather icon-arrow-right font-w600"></i></a>
+</div>
+</div>
+<div class="dz-card list-style style-2">
+<div class="dz-media">
+<a href="product-detail.html">
+<img src="assets/images/product/product1/pic4.png" alt="">
+</a>
+<a href="javascript:void(0);" class="item-bookmark icon-left">
+<i class="feather icon-heart-on"></i>
+</a>
+</div>
+<div class="dz-content">
+<h6 class="title"><a href="product-detail.html">Echo Vibe Urban Runners</a></h6>
+<ul class="dz-meta">
+<li class="dz-price">$179</li>
+<li class="dz-status">FREE Delivery</li>
+</ul>
+<div class="dz-off">40% Off</div>
+<a href="product-detail.html" class="dz-icon icon-fill icon-xs"><i class="feather icon-arrow-right font-w600"></i></a>
+</div>
+</div>
+<!-- LIST TYPE  -->
+</div>
+</div>
+</div>
+</main>
+<!-- Main Content End -->
+
+<!-- Filters Area -->
+<div class="footer fixed">
+<ul class="dz-product-filter">
+<li>
+<a href="javascript:void(0);" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom1" aria-controls="offcanvasBottom1"><i class="fi fi-rr-user"></i>Gender</a>
+</li>
+<li>
+<a href="javascript:void(0);" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom2" aria-controls="offcanvasBottom2"><i class="fi fi-rr-arrow-up"></i>Sort</a>
+</li>
+<li>
+<a href="javascript:void(0);" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom3" aria-controls="offcanvasBottom3"><i class="fi fi-rr-filter"></i>Filter</a>
+</li>
+</ul>
+</div>
+<!-- Filters Area -->
+
+<!-- Filter1 -->
+<div class="offcanvas offcanvas-bottom p-b60" tabindex="-1" id="offcanvasBottom1" aria-labelledby="offcanvasBottomLabel1">
+<div class="offcanvas-header">
+<h4 class="offcanvas-title" id="offcanvasBottomLabel1">Gender</h4>
+<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+<i class="icon feather icon-x"></i>
+</button>
+</div>
+<div class="offcanvas-body">
+<div class="d-flex flex-wrap gap-2">
+<div class="form-check style-2">
+<input class="form-check-input" type="radio" name="filterRadio" id="filterRadio1" checked="">
+<label class="form-check-label" for="filterRadio1">
+Male
+</label>
+</div>
+<div class="form-check style-2">
+<input class="form-check-input" type="radio" name="filterRadio" id="filterRadio2">
+<label class="form-check-label" for="filterRadio2">
+Female
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- Filter1 -->
+
+<!-- Filter2 -->
+<div class="offcanvas offcanvas-bottom p-b60" tabindex="-1" id="offcanvasBottom2" aria-labelledby="offcanvasBottomLabel2">
+<div class="offcanvas-header">
+<h4 class="offcanvas-title" id="offcanvasBottomLabel2">Sort By</h4>
+<button type="button" class="btn-close style-2" data-bs-dismiss="offcanvas" aria-label="Close">
+<i class="fi fi-rr-cross"></i>
+</button>
+</div>
+<div class="offcanvas-body">
+<div class="d-flex flex-wrap gap-2">
+<div class="form-check style-2">
+<input class="form-check-input" type="radio" name="filterRadioTwo" id="filterRadio3" checked="">
+<label class="form-check-label" for="filterRadio3">Relevance</label>
+</div>
+<div class="form-check style-2">
+<input class="form-check-input" type="radio" name="filterRadioTwo" id="filterRadio4">
+<label class="form-check-label" for="filterRadio4">Popularity</label>
+</div>
+<div class="form-check style-2">
+<input class="form-check-input" type="radio" name="filterRadioTwo" id="filterRadio5">
+<label class="form-check-label" for="filterRadio5">Price - Low to High</label>
+</div>
+<div class="form-check style-2">
+<input class="form-check-input" type="radio" name="filterRadioTwo" id="filterRadio6">
+<label class="form-check-label" for="filterRadio6">Price - High to Low</label>
+</div>
+<div class="form-check style-2">
+<input class="form-check-input" type="radio" name="filterRadioTwo" id="filterRadio7">
+<label class="form-check-label" for="filterRadio7">Newest First</label>
+</div>
+</div>
+</div>
+</div>
+<!-- Filter2 -->
+
+<!-- Filter3 -->
+<div class="offcanvas offcanvas-bottom p-b60" tabindex="-1" id="offcanvasBottom3" aria-labelledby="offcanvasBottomLabel3">
+<div class="offcanvas-header">
+<h4 class="offcanvas-title" id="offcanvasBottomLabel3">Filters</h4>
+<button type="button" class="btn-close style-2" data-bs-dismiss="offcanvas" aria-label="Close">
+<i class="fi fi-rr-cross"></i>
+</button>
+</div>
+<div class="offcanvas-body">
+<div class="filter-inner-content">
+<!-- Dz Category -->
+<div class="title-bar">
+<h5 class="title">Top Brands</h5>
+<a class="link" href="products.html">View All</a>
+</div>
+<div class="swiper dz-category-swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="form-check style-3">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck6" checked="">
+<label class="form-check-label" for="filterCheck6">
+<span class="dz-icon-box">
+<svg width="30" height="12" viewbox="0 0 30 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.8603 4.22967L14.9966 4.71903L9.8255 6.07275C7.9993 6.52461 6.40184 7.12647 4.8625 6.59961C2.77005 5.69588 2.80755 3.34469 4.36751 0.843506C1.60946 3.1197 -3.35354 10.3983 3.35879 11.1332C4.21377 11.2457 5.73623 10.9457 7.38994 10.2501L14.9966 7.12835L30 0.993502L16.8603 4.22967Z" fill="black"></path>
+</svg>
+</span>
+<span class="name">Nike</span>
+</label>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="form-check style-3">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck7">
+<label class="form-check-label" for="filterCheck7">
+<span class="dz-icon-box">
+<svg width="30" height="18" viewbox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.1006 9.42368L29.9999 17.5856H25.1006H22.1306L17.4524 9.78743L13.9087 3.88681L17.4524 1.75681L19.6837 0.414307L25.1006 9.42368Z" fill="black"></path>
+<path d="M17.4526 14.3754L19.3726 17.5854H17.4526H11.5088L7.14193 10.3179L6.95068 10.0011L7.14193 9.88857L12.7332 6.52295L17.4526 14.3754Z" fill="black"></path>
+<path d="M7.14188 14.9007L8.7525 17.5857H7.14188H0.883125L0 16.1119L5.78062 12.6394L7.14188 14.9007Z" fill="black"></path>
+</svg>
+</span>
+<span class="name">Adidas</span>
+</label>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="form-check style-3">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck8">
+<label class="form-check-label" for="filterCheck8">
+<span class="dz-icon-box">
+<svg width="44" height="13" viewbox="0 0 44 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.0764 1.09053C35.3739 0.615563 39.686 0.276912 44 0C41.6673 0.594168 39.3266 1.16633 37.0158 1.84669C33.771 2.77278 30.6069 3.95379 27.4819 5.21914C25.8466 4.25393 24.2053 3.29971 22.5713 2.33266C25.3839 1.78128 28.2295 1.41512 31.0764 1.09053ZM0 0.263464C5.37766 0.270188 10.7559 0.255517 16.1324 0.270799C17.3073 0.86191 18.4401 1.53616 19.5863 2.18106C24.0268 4.73195 28.4435 7.32502 32.8382 9.95354C33.8945 10.5868 34.9514 11.2183 35.9968 11.8699C36.226 12.0203 36.4681 12.1529 36.6808 12.3272C31.9322 10.3319 27.2258 8.23094 22.4111 6.39831C18.3062 4.82731 14.1151 3.48126 9.85487 2.40051C7.50317 1.79718 5.13192 1.27269 2.75088 0.798337C1.83636 0.60945 0.911458 0.463965 0 0.263464ZM5.89972 8.12641C8.13343 6.66177 10.6001 5.58897 13.1101 4.69711C14.6059 5.10055 16.0761 5.59875 17.55 6.07616C15.5901 6.8531 13.7067 7.84094 12.0103 9.09774C10.9259 9.91319 9.88116 10.8087 9.05589 11.8925C6.62167 11.8938 4.18745 11.895 1.75384 11.8919C2.90982 10.4132 4.33355 9.15581 5.89972 8.12641ZM13.332 10.2457C15.0137 8.71691 16.9723 7.51085 19.044 6.5872C20.2141 6.99615 21.3755 7.43077 22.5321 7.87701C21.5314 8.58915 20.535 9.32453 19.703 10.2347C19.2238 10.7482 18.8001 11.3106 18.4083 11.8925C16.2063 11.895 14.0044 11.8919 11.8025 11.8944C12.2463 11.2874 12.7824 10.7555 13.332 10.2457Z" fill="black"></path>
+</svg>
+</span>
+<span class="name">Reebok</span>
+</label>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="form-check style-3">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck9" checked="">
+<label class="form-check-label" for="filterCheck9">
+<span class="dz-icon-box">
+<svg width="39" height="30" viewbox="0 0 39 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.64307 0.12786C3.39553 0.166042 3.15755 1.07754 2.67913 1.55238C2.32925 1.89507 1.89251 1.87363 1.66052 2.29731C1.57245 2.45559 1.60098 2.72577 1.50104 2.98518C1.30586 3.50401 0.618076 3.55039 0.618076 4.11569C0.615685 4.72617 1.19166 4.84277 1.69024 5.27592C2.07941 5.6246 2.1175 5.86496 2.58867 6.03392C2.99099 6.17085 3.58952 5.72334 4.12859 5.88401C4.57131 6.01615 4.9949 6.11131 5.09492 6.56591C5.1829 6.9848 5.08894 7.63449 4.55226 7.55957C4.37135 7.53933 3.58712 7.27513 2.62327 7.37746C1.46055 7.5096 0.13367 7.88912 0.00400486 9.18516C-0.0674047 9.90985 0.828632 10.7643 1.69383 10.5905C2.29236 10.4727 2.00919 9.76712 2.33524 9.42434C2.76241 8.98529 5.1829 10.9571 7.43324 10.9571C8.38053 10.9571 9.08497 10.7179 9.7848 9.98485C9.85015 9.9289 9.92993 9.80872 10.0311 9.80154C10.1263 9.80872 10.2929 9.90268 10.3476 9.94317C12.16 11.3997 13.5297 14.3213 20.1903 14.3558C21.1268 14.3605 22.1942 14.808 23.0653 15.6029C23.8424 16.3217 24.297 17.439 24.7384 18.5731C25.4049 20.2749 26.5997 21.9302 28.4108 23.7724C28.5096 23.8711 30.0007 25.0302 30.1197 25.1171C30.1387 25.129 30.2482 25.3908 30.2102 25.5371C30.1662 26.6415 30.0055 29.8533 32.3998 29.9985C32.9853 30.0282 32.8317 29.6165 32.8317 29.3332C32.8306 28.7739 32.7282 28.2182 33.0234 27.6458C33.4267 26.8581 32.1678 26.4951 32.2047 24.7922C32.2308 23.5224 31.1645 23.739 30.6231 22.7715C30.3113 22.211 30.034 21.9136 30.0543 21.228C30.1756 17.3701 29.2331 14.8353 28.7631 14.213C28.3966 13.7429 28.0931 13.5561 28.4287 13.3383C30.4268 12.0186 30.8802 10.7904 30.8802 10.7904C31.9428 8.29263 32.8984 6.01129 34.2157 5.00703C34.4811 4.79989 35.1618 4.29182 35.5795 4.09186C36.8088 3.5123 37.4562 3.16131 37.8132 2.81375C38.3784 2.2628 38.8247 1.11444 38.2832 0.418281C37.6097 -0.440939 36.4446 0.240953 35.9306 0.545554C32.257 2.72577 31.7156 6.5718 30.4433 8.78054C29.4283 10.5453 27.7778 11.8412 26.3022 11.9472C25.1954 12.0292 24.0031 11.8055 22.8154 11.2843C19.9273 10.0182 18.3469 8.38309 17.9744 8.09395C17.1985 7.49534 11.1746 1.5821 6.29436 1.34054C6.29436 1.34054 5.68875 0.127945 5.53636 0.107701C5.17932 0.0624296 4.81407 0.832388 4.55226 0.921735C4.30592 1.00374 3.89181 0.0873717 3.64307 0.12786Z" fill="black"></path>
+</svg>
+</span>
+<span class="name">Puma</span>
+</label>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="form-check style-3">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck10">
+<label class="form-check-label" for="filterCheck10">
+<span class="dz-icon-box">
+<svg width="39" height="9" viewbox="0 0 39 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M28.1182 6.0557C28.5222 3.93302 31.0213 2.85663 32.8655 2.95914C33.5781 2.9994 34.1926 3.21584 34.5495 3.61635L34.552 3.61386L34.5541 3.61635C34.7008 3.46112 34.8475 3.30611 34.9955 3.15213C35.0818 3.06228 35.3285 3.09112 35.5475 3.13076C35.7955 3.17579 36.0607 3.2783 36.23 3.27851C36.4026 3.27872 36.8112 3.15317 37.1995 3.09507C37.5882 3.03675 37.9561 3.04568 37.893 3.20256L37.5452 4.06396H37.5521L36.4159 6.87414C36.1897 7.43382 37.0754 7.28544 38.3062 5.98369C38.517 6.1219 38.6131 6.14825 38.8237 6.67078C37.772 7.57451 36.7685 8.22342 35.3775 8.70299C34.1272 9.13379 33.2059 8.50958 32.9158 7.4693C31.139 9.13358 28.6629 9.11574 27.9524 7.23834C26.7969 7.80942 25.4159 8.4162 24.8434 8.58159C24.3943 8.7117 23.9853 8.80239 23.6016 8.80488C22.9867 8.80903 22.3156 8.23628 22.5275 7.39397C21.5086 7.8447 20.6991 8.13896 19.5316 8.54133C18.2809 8.97213 17.5614 8.50979 17.2713 7.4693C15.4939 9.13379 13.017 9.11574 12.3071 7.23668C11.6092 7.57264 10.6435 8.06633 9.75467 8.41454C8.32509 9.05742 6.64981 8.92856 5.39828 7.61809L5.8075 6.97396C6.39664 7.60066 7.11527 7.56538 7.67847 7.05655C8.27819 6.51473 8.65877 5.47009 8.38589 4.61408C8.26594 4.23765 7.84178 3.949 7.04616 4.0015L7.29269 3.34574C8.10616 3.31669 8.74219 3.20837 9.09331 2.69684C9.58637 1.97863 9.59488 0.871943 8.53696 0.901825C8.34999 0.907013 8.13002 0.947063 7.87415 1.02924C7.69071 1.57148 7.36802 2.21125 7.10821 2.88381C6.51534 4.41777 5.85129 6.12107 5.07995 7.21821C4.16086 8.52577 3.17806 8.78475 2.38618 8.73121C1.55778 8.67518 0.90825 8.42471 0.000366434 7.60564C-0.00399141 7.25826 0.0306638 7.10718 0.0966539 6.67597C0.414154 7.12337 1.50922 7.59962 1.86407 7.07917C2.65803 5.91397 3.53167 3.66657 4.18348 2.21603C3.59434 2.41151 3.04753 2.77009 2.27516 3.30569C2.28429 3.21688 2.01742 3.02223 2.0278 2.76096C3.26522 1.33408 5.45638 0.461476 6.93203 0.149579C9.18732 -0.327086 11.6074 0.366226 11.9705 1.79186C12.2127 2.7425 11.0915 3.63357 10.0379 3.76223C10.6443 4.11916 11.2878 4.7388 11.4488 5.49707C11.5304 5.88014 11.5078 6.29061 11.3866 6.68385C11.741 6.51929 12.1693 6.30327 12.4515 6.18851C12.8963 3.13885 17.6092 2.15792 18.9099 3.61614L19.3556 3.15192C19.4419 3.06207 19.6887 3.09091 19.9076 3.13055C20.1556 3.17558 20.4208 3.2781 20.5901 3.2783C20.7632 3.27851 21.1714 3.15296 21.5601 3.09486C21.9483 3.03655 22.3164 3.04547 22.2532 3.20235L20.7717 6.87394C20.437 7.70317 22.8962 6.23437 23.0411 6.15448L24.0982 3.90853L23.01 3.92347L23.2052 3.00044L24.4078 3.00085C24.6056 2.73834 24.6639 2.42313 24.9266 2.22557C25.2825 1.95746 26.0947 2.10169 26.468 1.85785C26.7907 1.64702 27.0387 1.32952 27.3367 0.840608C27.5944 0.418105 28.5316 0.526428 28.3525 0.928594L27.5139 3.02555L28.5733 3.01559C29.0767 3.04194 28.6447 3.87823 28.0719 3.88466L27.1968 3.90064L26.1804 6.53216C25.8469 7.39522 27.1451 6.62845 28.1182 6.0557ZM18.3859 4.25508C18.2697 3.85561 17.9223 3.74853 17.6218 3.78049C16.9102 3.85624 16.2227 4.64604 15.87 5.19575C15.3047 6.07645 15.4387 7.37426 16.3373 7.13271C17.2879 6.87684 18.5546 4.8353 18.3859 4.25508ZM34.0303 4.25508C33.9139 3.85561 33.5667 3.74853 33.2663 3.78049C32.5545 3.85624 31.8672 4.64604 31.5142 5.19575C30.9491 6.07645 31.083 7.37426 31.9815 7.13271C32.9324 6.87684 34.199 4.8353 34.0303 4.25508Z" fill="black"></path>
+</svg>
+</span>
+<span class="name">Bata</span>
+</label>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="form-check style-3">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck11">
+<label class="form-check-label" for="filterCheck11">
+<span class="dz-icon-box">
+<svg width="30" height="12" viewbox="0 0 30 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.8603 4.22967L14.9966 4.71903L9.8255 6.07275C7.9993 6.52461 6.40184 7.12647 4.8625 6.59961C2.77005 5.69588 2.80755 3.34469 4.36751 0.843506C1.60946 3.1197 -3.35354 10.3983 3.35879 11.1332C4.21377 11.2457 5.73623 10.9457 7.38994 10.2501L14.9966 7.12835L30 0.993502L16.8603 4.22967Z" fill="black"></path>
+</svg>
+</span>
+<span class="name">Nike</span>
+</label>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="form-check style-3">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck12">
+<label class="form-check-label" for="filterCheck12">
+<span class="dz-icon-box">
+<svg width="30" height="12" viewbox="0 0 30 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.8603 4.22967L14.9966 4.71903L9.8255 6.07275C7.9993 6.52461 6.40184 7.12647 4.8625 6.59961C2.77005 5.69588 2.80755 3.34469 4.36751 0.843506C1.60946 3.1197 -3.35354 10.3983 3.35879 11.1332C4.21377 11.2457 5.73623 10.9457 7.38994 10.2501L14.9966 7.12835L30 0.993502L16.8603 4.22967Z" fill="black"></path>
+</svg>
+</span>
+<span class="name">Nike</span>
+</label>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="form-check style-3">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck13">
+<label class="form-check-label" for="filterCheck13">
+<span class="dz-icon-box">
+<svg width="44" height="13" viewbox="0 0 44 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.0764 1.09053C35.3739 0.615563 39.686 0.276912 44 0C41.6673 0.594168 39.3266 1.16633 37.0158 1.84669C33.771 2.77278 30.6069 3.95379 27.4819 5.21914C25.8466 4.25393 24.2053 3.29971 22.5713 2.33266C25.3839 1.78128 28.2295 1.41512 31.0764 1.09053ZM0 0.263464C5.37766 0.270188 10.7559 0.255517 16.1324 0.270799C17.3073 0.86191 18.4401 1.53616 19.5863 2.18106C24.0268 4.73195 28.4435 7.32502 32.8382 9.95354C33.8945 10.5868 34.9514 11.2183 35.9968 11.8699C36.226 12.0203 36.4681 12.1529 36.6808 12.3272C31.9322 10.3319 27.2258 8.23094 22.4111 6.39831C18.3062 4.82731 14.1151 3.48126 9.85487 2.40051C7.50317 1.79718 5.13192 1.27269 2.75088 0.798337C1.83636 0.60945 0.911458 0.463965 0 0.263464ZM5.89972 8.12641C8.13343 6.66177 10.6001 5.58897 13.1101 4.69711C14.6059 5.10055 16.0761 5.59875 17.55 6.07616C15.5901 6.8531 13.7067 7.84094 12.0103 9.09774C10.9259 9.91319 9.88116 10.8087 9.05589 11.8925C6.62167 11.8938 4.18745 11.895 1.75384 11.8919C2.90982 10.4132 4.33355 9.15581 5.89972 8.12641ZM13.332 10.2457C15.0137 8.71691 16.9723 7.51085 19.044 6.5872C20.2141 6.99615 21.3755 7.43077 22.5321 7.87701C21.5314 8.58915 20.535 9.32453 19.703 10.2347C19.2238 10.7482 18.8001 11.3106 18.4083 11.8925C16.2063 11.895 14.0044 11.8919 11.8025 11.8944C12.2463 11.2874 12.7824 10.7555 13.332 10.2457Z" fill="black"></path>
+</svg>
+</span>
+<span class="name">Adidas</span>
+</label>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="form-check style-3">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck14">
+<label class="form-check-label" for="filterCheck14">
+<span class="dz-icon-box">
+<svg width="39" height="30" viewbox="0 0 39 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.64307 0.12786C3.39553 0.166042 3.15755 1.07754 2.67913 1.55238C2.32925 1.89507 1.89251 1.87363 1.66052 2.29731C1.57245 2.45559 1.60098 2.72577 1.50104 2.98518C1.30586 3.50401 0.618076 3.55039 0.618076 4.11569C0.615685 4.72617 1.19166 4.84277 1.69024 5.27592C2.07941 5.6246 2.1175 5.86496 2.58867 6.03392C2.99099 6.17085 3.58952 5.72334 4.12859 5.88401C4.57131 6.01615 4.9949 6.11131 5.09492 6.56591C5.1829 6.9848 5.08894 7.63449 4.55226 7.55957C4.37135 7.53933 3.58712 7.27513 2.62327 7.37746C1.46055 7.5096 0.13367 7.88912 0.00400486 9.18516C-0.0674047 9.90985 0.828632 10.7643 1.69383 10.5905C2.29236 10.4727 2.00919 9.76712 2.33524 9.42434C2.76241 8.98529 5.1829 10.9571 7.43324 10.9571C8.38053 10.9571 9.08497 10.7179 9.7848 9.98485C9.85015 9.9289 9.92993 9.80872 10.0311 9.80154C10.1263 9.80872 10.2929 9.90268 10.3476 9.94317C12.16 11.3997 13.5297 14.3213 20.1903 14.3558C21.1268 14.3605 22.1942 14.808 23.0653 15.6029C23.8424 16.3217 24.297 17.439 24.7384 18.5731C25.4049 20.2749 26.5997 21.9302 28.4108 23.7724C28.5096 23.8711 30.0007 25.0302 30.1197 25.1171C30.1387 25.129 30.2482 25.3908 30.2102 25.5371C30.1662 26.6415 30.0055 29.8533 32.3998 29.9985C32.9853 30.0282 32.8317 29.6165 32.8317 29.3332C32.8306 28.7739 32.7282 28.2182 33.0234 27.6458C33.4267 26.8581 32.1678 26.4951 32.2047 24.7922C32.2308 23.5224 31.1645 23.739 30.6231 22.7715C30.3113 22.211 30.034 21.9136 30.0543 21.228C30.1756 17.3701 29.2331 14.8353 28.7631 14.213C28.3966 13.7429 28.0931 13.5561 28.4287 13.3383C30.4268 12.0186 30.8802 10.7904 30.8802 10.7904C31.9428 8.29263 32.8984 6.01129 34.2157 5.00703C34.4811 4.79989 35.1618 4.29182 35.5795 4.09186C36.8088 3.5123 37.4562 3.16131 37.8132 2.81375C38.3784 2.2628 38.8247 1.11444 38.2832 0.418281C37.6097 -0.440939 36.4446 0.240953 35.9306 0.545554C32.257 2.72577 31.7156 6.5718 30.4433 8.78054C29.4283 10.5453 27.7778 11.8412 26.3022 11.9472C25.1954 12.0292 24.0031 11.8055 22.8154 11.2843C19.9273 10.0182 18.3469 8.38309 17.9744 8.09395C17.1985 7.49534 11.1746 1.5821 6.29436 1.34054C6.29436 1.34054 5.68875 0.127945 5.53636 0.107701C5.17932 0.0624296 4.81407 0.832388 4.55226 0.921735C4.30592 1.00374 3.89181 0.0873717 3.64307 0.12786Z" fill="black"></path>
+</svg>
+</span>
+<span class="name">Reebok</span>
+</label>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="form-check style-3">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck15">
+<label class="form-check-label" for="filterCheck15">
+<span class="dz-icon-box">
+<svg width="39" height="9" viewbox="0 0 39 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M28.1182 6.0557C28.5222 3.93302 31.0213 2.85663 32.8655 2.95914C33.5781 2.9994 34.1926 3.21584 34.5495 3.61635L34.552 3.61386L34.5541 3.61635C34.7008 3.46112 34.8475 3.30611 34.9955 3.15213C35.0818 3.06228 35.3285 3.09112 35.5475 3.13076C35.7955 3.17579 36.0607 3.2783 36.23 3.27851C36.4026 3.27872 36.8112 3.15317 37.1995 3.09507C37.5882 3.03675 37.9561 3.04568 37.893 3.20256L37.5452 4.06396H37.5521L36.4159 6.87414C36.1897 7.43382 37.0754 7.28544 38.3062 5.98369C38.517 6.1219 38.6131 6.14825 38.8237 6.67078C37.772 7.57451 36.7685 8.22342 35.3775 8.70299C34.1272 9.13379 33.2059 8.50958 32.9158 7.4693C31.139 9.13358 28.6629 9.11574 27.9524 7.23834C26.7969 7.80942 25.4159 8.4162 24.8434 8.58159C24.3943 8.7117 23.9853 8.80239 23.6016 8.80488C22.9867 8.80903 22.3156 8.23628 22.5275 7.39397C21.5086 7.8447 20.6991 8.13896 19.5316 8.54133C18.2809 8.97213 17.5614 8.50979 17.2713 7.4693C15.4939 9.13379 13.017 9.11574 12.3071 7.23668C11.6092 7.57264 10.6435 8.06633 9.75467 8.41454C8.32509 9.05742 6.64981 8.92856 5.39828 7.61809L5.8075 6.97396C6.39664 7.60066 7.11527 7.56538 7.67847 7.05655C8.27819 6.51473 8.65877 5.47009 8.38589 4.61408C8.26594 4.23765 7.84178 3.949 7.04616 4.0015L7.29269 3.34574C8.10616 3.31669 8.74219 3.20837 9.09331 2.69684C9.58637 1.97863 9.59488 0.871943 8.53696 0.901825C8.34999 0.907013 8.13002 0.947063 7.87415 1.02924C7.69071 1.57148 7.36802 2.21125 7.10821 2.88381C6.51534 4.41777 5.85129 6.12107 5.07995 7.21821C4.16086 8.52577 3.17806 8.78475 2.38618 8.73121C1.55778 8.67518 0.90825 8.42471 0.000366434 7.60564C-0.00399141 7.25826 0.0306638 7.10718 0.0966539 6.67597C0.414154 7.12337 1.50922 7.59962 1.86407 7.07917C2.65803 5.91397 3.53167 3.66657 4.18348 2.21603C3.59434 2.41151 3.04753 2.77009 2.27516 3.30569C2.28429 3.21688 2.01742 3.02223 2.0278 2.76096C3.26522 1.33408 5.45638 0.461476 6.93203 0.149579C9.18732 -0.327086 11.6074 0.366226 11.9705 1.79186C12.2127 2.7425 11.0915 3.63357 10.0379 3.76223C10.6443 4.11916 11.2878 4.7388 11.4488 5.49707C11.5304 5.88014 11.5078 6.29061 11.3866 6.68385C11.741 6.51929 12.1693 6.30327 12.4515 6.18851C12.8963 3.13885 17.6092 2.15792 18.9099 3.61614L19.3556 3.15192C19.4419 3.06207 19.6887 3.09091 19.9076 3.13055C20.1556 3.17558 20.4208 3.2781 20.5901 3.2783C20.7632 3.27851 21.1714 3.15296 21.5601 3.09486C21.9483 3.03655 22.3164 3.04547 22.2532 3.20235L20.7717 6.87394C20.437 7.70317 22.8962 6.23437 23.0411 6.15448L24.0982 3.90853L23.01 3.92347L23.2052 3.00044L24.4078 3.00085C24.6056 2.73834 24.6639 2.42313 24.9266 2.22557C25.2825 1.95746 26.0947 2.10169 26.468 1.85785C26.7907 1.64702 27.0387 1.32952 27.3367 0.840608C27.5944 0.418105 28.5316 0.526428 28.3525 0.928594L27.5139 3.02555L28.5733 3.01559C29.0767 3.04194 28.6447 3.87823 28.0719 3.88466L27.1968 3.90064L26.1804 6.53216C25.8469 7.39522 27.1451 6.62845 28.1182 6.0557ZM18.3859 4.25508C18.2697 3.85561 17.9223 3.74853 17.6218 3.78049C16.9102 3.85624 16.2227 4.64604 15.87 5.19575C15.3047 6.07645 15.4387 7.37426 16.3373 7.13271C17.2879 6.87684 18.5546 4.8353 18.3859 4.25508ZM34.0303 4.25508C33.9139 3.85561 33.5667 3.74853 33.2663 3.78049C32.5545 3.85624 31.8672 4.64604 31.5142 5.19575C30.9491 6.07645 31.083 7.37426 31.9815 7.13271C32.9324 6.87684 34.199 4.8353 34.0303 4.25508Z" fill="black"></path>
+</svg>
+</span>
+<span class="name">Bata</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="filter-inner-content">
+<div class="title-bar">
+<h5 class="sub-title">Categories:</h5>
+<a href="products.html">See All</a>
+</div>
+<div class="d-flex flex-wrap gap-2">
+<div class="form-check style-2">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck16">
+<label class="form-check-label" for="filterCheck16">All</label>
+</div>
+<div class="form-check style-2">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck17" checked="">
+<label class="form-check-label" for="filterCheck17">Heels</label>
+</div>
+<div class="form-check style-2">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck18" checked="">
+<label class="form-check-label" for="filterCheck18">Boots</label>
+</div>
+<div class="form-check style-2">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck19">
+<label class="form-check-label" for="filterCheck19">Loafers</label>
+</div>
+<div class="form-check style-2">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck20">
+<label class="form-check-label" for="filterCheck20">Monk</label>
+</div>
+<div class="form-check style-2">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck21">
+<label class="form-check-label" for="filterCheck21">Sandals</label>
+</div>
+<div class="form-check style-2">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck22">
+<label class="form-check-label" for="filterCheck22">Court Shoe</label>
+</div>
+<div class="form-check style-2">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck23">
+<label class="form-check-label" for="filterCheck23">Outdoor</label>
+</div>
+<div class="form-check style-2">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck24">
+<label class="form-check-label" for="filterCheck24">Formal</label>
+</div>
+</div>
+</div>
+<div class="filter-inner-content">
+<div class="title-bar">
+<h5 class="sub-title">Size:</h5>
+<a href="products.html">See All</a>
+</div>
+<div class="d-flex flex-wrap gap-2">
+<div class="form-check style-2">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck25" checked="">
+<label class="form-check-label" for="filterCheck25">6.5</label>
+</div>
+<div class="form-check style-2">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck26">
+<label class="form-check-label" for="filterCheck26">7</label>
+</div>
+<div class="form-check style-2">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck27" checked="">
+<label class="form-check-label" for="filterCheck27">7.5</label>
+</div>
+<div class="form-check style-2">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck28">
+<label class="form-check-label" for="filterCheck28">8</label>
+</div>
+<div class="form-check style-2">
+<input class="form-check-input" type="checkbox" name="filterCheck" id="filterCheck29">
+<label class="form-check-label" for="filterCheck29">8.5</label>
+</div>
+</div>
+</div>
+<div class="filter-inner-content">
+<div class="title-bar">
+<h5 class="sub-title">Price:</h5>
+</div>
+<div class="range-slider style-1">
+<div class="dz-value">
+<span class="example-val title slider-margin-value-min"></span>
+<span class="example-val title slider-margin-value-max"></span>
+</div>
+<div id="slider-tooltips"></div>
+</div>
+</div>
+<div class="d-flex align-items-center gap-2">
+<a href="javascript:void(0);" class="btn btn-light btn-thin w-100">Reset</a>
+<a href="javascript:void(0);" class="btn btn-primary btn-thin w-100">Apply</a>
+</div>
+</div>
+</div>
+<!-- Filter3 -->
+</div>  
+<!--**********************************
+Scripts
+***********************************-->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/wnumb/wNumb.js"></script><!-- WNUMB -->
+<script src="assets/vendor/nouislider/nouislider.min.js"></script><!-- NOUSLIDER MIN JS-->
+<script src="assets/js/noui-slider.init.js"></script><!-- NOUSLIDER MIN JS-->
+<script src="assets/js/dz.carousel.js"></script>
+<script src="assets/js/settings.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>

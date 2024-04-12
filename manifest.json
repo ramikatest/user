@@ -1,0 +1,15 @@
+{
+  "background_color": "var(--primary)",
+  "description": "Ramika Safaris And Tours Limited",
+  "display": "standalone",
+  "icons": [
+	{
+	  "src": "logo.png",
+	  "sizes": "150x150",
+	  "type": "image/png"
+	}
+  ],
+  "name": "Ramika Safaris And Tours Limited",
+  "short_name": "Ramika",
+  "start_url": "index.html"
+}
